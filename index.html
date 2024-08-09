@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typing Hero: The Quest for Speed</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Assumez que vous avez déplacé le CSS dans styles.css -->
+</head>
+<body>
+    <div id="menuScreen">
+        <h1>Typing Hero: The Quest for Speed</h1>
+        <button id="newGame">New Game</button>
+        <button id="loadGame">Load Game</button>
+        <button id="options">Options</button>
+        <button id="quitGame">Leave the game</button>
+    </div>
+    
+    <div id="gameInterface" style="display: none;">
+        <div id="controls">
+            <span id="playerNameDisplay"></span>
+            <button id="saveProgress">Save Progress</button>
+            <button id="exitGame">Exit Game</button>
+        </div>
+        <canvas id="gameCanvas" width="800" height="600"></canvas>
+    </div>
+
+    <div id="battleScreen">
+        <p id="wordToType"></p>
+        <input type="text" id="typeInput" autofocus />
+        <p id="battleResult"></p>
+        <p id="playerHP">Player HP: 100</p>
+        <p id="enemyHP">Enemy HP: 50</p>
+        <div id="enemyProgress"></div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/web3@1.3.6/dist/web3.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
